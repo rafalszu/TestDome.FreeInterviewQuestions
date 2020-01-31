@@ -1,6 +1,14 @@
 namespace TestDome.FreeInterviewQuestionsC
 {
-    public class AccountTest
+    /*
+    Using only NUnit's Assert.AreEqual method, write tests for the Account class that cover the following cases:
+
+    The Deposit and Withdraw methods will not accept negative numbers.
+    Account cannot overstep its overdraft limit.
+    The Deposit and Withdraw methods will deposit or withdraw the correct amount, respectively.
+    The Withdraw and Deposit methods return the correct results.
+    */
+    public class AccountTest // renamed
     {
         public double Balance { get; private set; }
         public double OverdraftLimit { get; private set; }
