@@ -33,7 +33,7 @@ namespace TestDome.FreeInterviewQuestionsC
             return false;
         }
     
-        public static void Execute(string[] args)
+        public static void Main(string[] args)
         {
             Song first = new Song("Hello");
             Song second = new Song("Eye of the tiger");

@@ -68,7 +68,7 @@ namespace TestDome.FreeInterviewQuestionsC
             return null;
         }
 
-        public static void Execute(string[] args)
+        public static void Main(string[] args)
         {
             int sum = 10;
             var list = new List<int>() { 3, 1, 5, 7, 5, 9 };

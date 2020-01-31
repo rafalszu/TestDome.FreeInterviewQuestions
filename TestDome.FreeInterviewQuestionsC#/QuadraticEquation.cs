@@ -20,7 +20,7 @@ namespace TestDome.FreeInterviewQuestionsC
             return new Tuple<double, double>(result1, result2);
         }
 
-        public static void Execute(string[] args)
+        public static void Main(string[] args)
         {
             Tuple<double, double> roots = QuadraticEquation.FindRoots(2, 10, 8);
             Console.WriteLine("Roots: " + roots.Item1 + ", " + roots.Item2);

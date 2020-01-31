@@ -41,7 +41,7 @@ namespace TestDome.FreeInterviewQuestionsC
 
     public class UserInput
     {
-        public static void Execute(string[] args)
+        public static void Main(string[] args)
         {
             TextInput input = new NumericInput();
             input.Add('1');

@@ -24,7 +24,7 @@ namespace TestDome.FreeInterviewQuestionsC
                 return names1.Concat(names2).Distinct().ToArray();
         }
         
-        public static void Execute(string[] args)
+        public static void Main(string[] args)
         {
             string[] names1 = new string[] {"Ava", "Emma", "Olivia"};
             string[] names2 = new string[] {"Olivia", "Sophia", "Emma"};
