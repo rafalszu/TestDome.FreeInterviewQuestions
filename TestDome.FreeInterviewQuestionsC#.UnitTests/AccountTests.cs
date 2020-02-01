@@ -8,19 +8,19 @@ namespace TestDome.FreeInterviewQuestionsC.UnitTests
         [Fact]
         public void WriterDoesntHaveFlagDelete()
         {
-            Assert.Equal(false, Access.Writer.HasFlag(Access.Delete));
+            Assert.False(Access.Writer.HasFlag(Access.Delete));
         }
 
         [Fact]
         public void OwnerHasWriterFlag()
         {
-            Assert.Equal(true, Access.Owner.HasFlag(Access.Writer));
+            Assert.True(Access.Owner.HasFlag(Access.Writer));
         }
 
         [Fact]
         public void EditorDoesntHaveFlagSubmit()
         {
-            Assert.Equal(false, Access.Editor.HasFlag(Access.Submit));
+            Assert.True(Access.Editor.HasFlag(Access.Submit));
         }
     }
 }

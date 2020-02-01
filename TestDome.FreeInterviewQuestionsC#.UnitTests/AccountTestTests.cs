@@ -4,7 +4,7 @@ namespace TestDome.FreeInterviewQuestionsC.UnitTests
 {
     public class AccountTestTests
     {
-        private double epsilon = 1e-6;
+        // private double epsilon = 1e-6;
 
         // testdome answer
         // [Test]
@@ -39,7 +39,7 @@ namespace TestDome.FreeInterviewQuestionsC.UnitTests
         {
             AccountTest account = new AccountTest(10);
             var actual = account.Deposit(-1);
-            Assert.Equal(false, actual);
+            Assert.False(actual);
         }
 
         // testdome answer
@@ -57,7 +57,7 @@ namespace TestDome.FreeInterviewQuestionsC.UnitTests
         {
             AccountTest account = new AccountTest(10);
             var actual = account.Withdraw(-5);
-            Assert.Equal(false, actual);
+            Assert.False(actual);
         }
 
         // testdome asnwer
@@ -81,7 +81,7 @@ namespace TestDome.FreeInterviewQuestionsC.UnitTests
 
             var actual = account.Withdraw(120);
 
-            Assert.Equal(false, actual);
+            Assert.False(actual);
         }
 
         // testdome answer
@@ -151,7 +151,7 @@ namespace TestDome.FreeInterviewQuestionsC.UnitTests
             account.Deposit(20);
 
             var actual = account.Withdraw(5);
-            Assert.Equal(true, actual);
+            Assert.True(actual);
         }
 
         // testdome answer
@@ -171,7 +171,7 @@ namespace TestDome.FreeInterviewQuestionsC.UnitTests
             AccountTest account = new AccountTest(10);
 
             var actual = account.Deposit(10);
-            Assert.Equal(true, actual);
+            Assert.True(actual);
         }
 
     }

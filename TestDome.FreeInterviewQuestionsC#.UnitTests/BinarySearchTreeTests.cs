@@ -11,11 +11,11 @@ namespace TestDome.FreeInterviewQuestionsC.UnitTests
             Node n3 = new Node(3, null, null);
             Node n2 = new Node(2, n1, n3);
 
-            Assert.Equal(true, BinarySearchTree.Contains(n2, 3));
+            Assert.True(BinarySearchTree.Contains(n2, 3));
 
-            Assert.Equal(true, BinarySearchTree.Contains(n3, 3));
+            Assert.True(BinarySearchTree.Contains(n3, 3));
 
-            Assert.Equal(false, BinarySearchTree.Contains(n1, 3));
+            Assert.False(BinarySearchTree.Contains(n1, 3));
         }
 
         [Fact]
@@ -27,7 +27,7 @@ namespace TestDome.FreeInterviewQuestionsC.UnitTests
             Node n2 = new Node(2, n1, n3);
 
             var actual = BinarySearchTree.Contains(n2, 0);
-            Assert.Equal(true, actual);
+            Assert.True(actual);
         }
     }
 }

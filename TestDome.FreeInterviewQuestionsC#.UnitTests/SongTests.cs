@@ -13,7 +13,7 @@ namespace TestDome.FreeInterviewQuestionsC.UnitTests
             first.NextSong = second;
             second.NextSong = first;
 
-            Assert.Equal(true, first.IsRepeatingPlaylist());
+            Assert.True(first.IsRepeatingPlaylist());
         }
 
         [Fact]
@@ -24,7 +24,7 @@ namespace TestDome.FreeInterviewQuestionsC.UnitTests
         
             first.NextSong = second;
 
-            Assert.Equal(false, first.IsRepeatingPlaylist());
+            Assert.False(first.IsRepeatingPlaylist());
         }
     }
 }
