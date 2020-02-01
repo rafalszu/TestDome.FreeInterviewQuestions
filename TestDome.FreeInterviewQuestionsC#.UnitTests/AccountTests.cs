@@ -20,7 +20,7 @@ namespace TestDome.FreeInterviewQuestionsC.UnitTests
         [Fact]
         public void EditorDoesntHaveFlagSubmit()
         {
-            Assert.True(Access.Editor.HasFlag(Access.Submit));
+            Assert.False(Access.Editor.HasFlag(Access.Submit));
         }
     }
 }
